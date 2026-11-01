@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velora | Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">✦ Velora</a>
+
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="searchBtn">⌕</button>
+      <button id="favoritesBtn">♡</button>
+      <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+    </div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">NEW COLLECTION — 2026</p>
+        <h1>Style Your World <br><span>with Velora</span> ♡</h1>
+        <p>Trendy clothes. Better mood.</p>
+        <a href="#shop" class="shop-btn">Shop Now →</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=900"
+          alt="Fashion model"
+        >
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <p class="eyebrow">DISCOVER YOUR STYLE</p>
+        <h2>Our Collection</h2>
+      </div>
+
+      <div class="shop-controls">
+        <div class="categories">
+          <button class="category active" data-category="All">All</button>
+          <button class="category" data-category="Women">Women</button>
+          <button class="category" data-category="Men">Men</button>
+          <button class="category" data-category="Accessories">Accessories</button>
+          <button class="category" data-category="Shoes">Shoes</button>
+        </div>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search products..."
+        >
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">OUR PHILOSOPHY</p>
+      <h2>Fashion is more than clothes.</h2>
+      <p>
+        Velora brings timeless elegance and modern trends
+        together. Find your style and express yourself.
+      </p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Stay in Style ✦</h2>
+      <p>Discover new collections and special offers.</p>
+      <a href="mailto:hello@velora.com">Contact Us →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Velora. All rights reserved.</p>
+    <p>Made with ♡ for fashion lovers.</p>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="closeCart">✕</button>
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-total">
+        <h3>Total: $<span id="cartTotal">0</span></h3>
+        <button id="checkoutBtn">Checkout →</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
